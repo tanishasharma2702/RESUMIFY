@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESUMIFY – AI-Powered Resume Analyzer & Career Development Platform</title>
+    <!-- Prevent theme flicker before hydration -->
+    <script>
+      (function() {
+        try {
+          const savedTheme = localStorage.getItem('resumify_theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-canvas-bg text-canvas-primary dark:bg-plum-darker dark:text-darkCanvas-primary transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <!-- Botpress Webchat: Skillzy AI Chatbot -->
+    <script src="https://cdn.botpress.cloud/webchat/v5.0/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2026/11/17/15/20261117153506-X4MU52LL.js" defer></script>
+  </body>
+</html>

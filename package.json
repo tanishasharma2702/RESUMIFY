@@ -1,0 +1,21 @@
+{
+  "name": "resumify-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RESUMIFY - AI-Powered Resume Analyzer & Career Development Platform",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev"
+  },
+  "keywords": [
+    "resume-analyzer",
+    "career-guidance",
+    "gemini-ai",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC"
+}
